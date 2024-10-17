@@ -1,14 +1,18 @@
 # C++
 
-Mislim da ovako ide, treba proveriti:
-
 ```
-cmake -S . -B build
-cmake --build build
+cmake ..
+make
+./main
 ```
 ## Autocompletition
 
 Takodje treba napraviti symbolic link za clangd.
+
+```
+bear -- cmake ..
+bear -- make
+```
 
 ## Biblioteka za clangd
 
