@@ -5,5 +5,5 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 # Add this line, to enable compile command export
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
 
-add_subdirectory(exercise1)
+add_subdirectory(exercise2)
 # Other stuff...
