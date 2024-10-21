@@ -22,6 +22,7 @@ private:
 public:
      explicit MyBigInt(unsigned long long number) {
         digits = std::shared_ptr<int_least8_t[]>(new int_least8_t[size](), std::default_delete<int_least8_t[]>());
+        fillWithZero();
         int i = 0;
         while (number) {
             digits[i++] = number % 10;
@@ -30,6 +31,8 @@ public:
     }
 
     explicit MyBigInt(const char* number) {
+        digits = std::shared_ptr<int_least8_t[]>(new int_least8_t[size](), std::default_delete<int_least8_t[]>());
+        fillWithZero();
         int size = std::strlen(number) - 1;
         int i = 0;
         while (size >= 0) {
@@ -114,7 +117,6 @@ public:
 
 MyBigInt operator""_mbi(const char* x){
     MyBigInt result{x};
-    std::cout<< "******************** " << result << std::endl;
     return result;
 }
 
