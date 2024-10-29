@@ -6,7 +6,7 @@ project(exercise3)
 
 # Add the source files
 # Replace main.c with your actual C or C++ source files
-set(SOURCES exercise1.cpp)
+set(SOURCES exercise2.cpp)
 
 # Create an executable from the source files
 add_executable(main ${SOURCES})
