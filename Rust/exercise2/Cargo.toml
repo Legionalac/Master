@@ -1,0 +1,10 @@
+[package]
+name = "exercise2"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "exercise2"
+path = "src/exercise3.rs"
+
+[dependencies]
